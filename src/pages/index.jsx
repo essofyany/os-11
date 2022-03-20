@@ -1,15 +1,7 @@
-import { useRouter } from "next/router";
-import BoxGrid from "../components/BoxGrid";
-import Button from "../components/Button";
-
 export default function HomePage() {
-  const { push } = useRouter();
-  const list = [1, 2, 3, 5, 6, 7, 8, 9, 10];
   return (
-    <section className="w-full h-screen bg-fuchsia-600 flex justify-center items-center">
-      <div className="w-[90%] h-[90%] bg-white flex flex-col space-y-5 justify-center items-center shadow-lg">
-        <BoxGrid list={list} />
-      </div>
+    <section className="w-6/12 h-5/6 glass">
+      <h1 className="text-center text-3xl text-slate-700">Home page</h1>
     </section>
   );
 }
